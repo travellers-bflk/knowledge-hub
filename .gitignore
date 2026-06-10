@@ -1,0 +1,23 @@
+﻿# OS generated
+.DS_Store
+Thumbs.db
+*.tmp
+~$*
+
+# Dependencies & build
+node_modules/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sensitive — 绝对不能上传
+.env
+.env.*
+*_secret*
+*_private*
+*.pem
+*.key
+credentials.*

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="随机知识站——动漫、科学、体育冷知识 + B站精选视频">
+  <title>随机知识站</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header-title">随机知识站</h1>
+    <p class="header-sub">每一点好奇，都值得被满足</p>
+  </header>
+
+  <div class="category-bar" id="categoryBar">
+    <button class="cat-pill active" data-cat="all">全部</button>
+    <button class="cat-pill" data-cat="anime">动漫</button>
+    <button class="cat-pill" data-cat="science">科学</button>
+    <button class="cat-pill" data-cat="sports">体育</button>
+  </div>
+
+  <main class="main">
+    <div class="actions">
+      <button class="btn-refresh" id="refreshKnowledge" title="随机刷新一条知识">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="23 4 23 10 17 10"></polyline>
+          <polyline points="1 20 1 14 7 14"></polyline>
+          <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+        </svg>
+        刷新知识
+      </button>
+      <button class="btn-refresh" id="refreshBilibili" title="随机推荐一个B站视频">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+        随机视频
+      </button>
+    </div>
+
+    <section id="knowledgeSection">
+      <div class="card" id="knowledgeCard">
+        <span class="card-type" id="cardType">FACT</span>
+        <h2 class="card-title" id="cardTitle"></h2>
+        <p class="card-content" id="cardContent"></p>
+        <div class="question-reveal" id="questionReveal" style="display:none">
+          <button class="reveal-btn" id="revealBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            揭晓答案
+          </button>
+          <div class="answer-box" id="answerBox"></div>
+        </div>
+        <p class="card-source" id="cardSource"></p>
+      </div>
+    </section>
+
+    <div class="section-divider">B站精选</div>
+
+    <section id="bilibiliSection">
+      <div class="card" id="bilibiliCard">
+        <span class="card-type" style="background:#fde8e8;color:#e0245e">BILIBILI</span>
+        <a class="bilibili-link" id="bilibiliLink" href="#" target="_blank" rel="noopener">
+          <h2 class="card-title" id="bilibiliTitle">点击上方 随机视频 按钮加载</h2>
+        </a>
+        <p class="card-content" id="bilibiliDesc"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>内容仅供学习娱乐，视频归属原作者及B站</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
