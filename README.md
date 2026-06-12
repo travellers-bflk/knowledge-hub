@@ -21,5 +21,3 @@ python -m http.server 8765
 - 知识条目：`{ id: "s31", type: "fact", title: "标题", content: "内容..." }`
 - 问答条目：`{ id: "s32", type: "question", title: "问题？", content: "描述...", answer: "答案" }`
 - B站视频：`{ bvid: "BV号", title: "标题", category: "science", author: "UP主" }`
-
-提交推送后 GitHub Pages 自动部署。
